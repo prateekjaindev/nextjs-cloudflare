@@ -27,7 +27,7 @@ jobs:
         run: npm install --save-dev wrangler@4
 
       - name: Deploy with Wrangler
-        run: npm run deploy
+        run: npm run deploy --verbose
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
